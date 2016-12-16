@@ -1,0 +1,36 @@
+{
+  "name": "spark-sc-site",
+  "description": "The homepage for Spark SC, refreshed using Spike.",
+  "version": "0.0.1",
+  "author": "nahrwl",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/nahrwl/spark-sc-site/issues",
+  "dependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "hard-source-webpack-plugin": "0.2.2",
+    "image-webpack-loader": "^3.0.0",
+    "reshape-standard": "^0.4.2",
+    "spike-css-standards": "^0.1.3",
+    "spike-page-id": "^0.1.0",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "rimraf": "^2.5.4",
+    "snazzy": "^5.0.0",
+    "spike-core": "^0.12.3",
+    "standard": "^8.6.0"
+  },
+  "homepage": "https://github.com/nahrwl/spark-sc-site",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/nahrwl/spark-sc-site",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
+}
