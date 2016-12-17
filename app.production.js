@@ -26,10 +26,12 @@ module.exports = {
   },
   // adds css minification plugin
   postcss: (ctx) => {
-    return cssStandards({
+    const css = cssStandards({
       webpack: ctx,
       minify: true,
       warnForDuplicates: false // cssnano includes autoprefixer
     })
+    css.plugins.push(postcssEasyImport({ extensions: ['.sss'] }))
+    return css
   }
 }

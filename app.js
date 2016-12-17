@@ -4,6 +4,7 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('babel-preset-latest')
 const pageId = require('spike-page-id')
+const postcssEasyImport = require('postcss-easy-import')
 
 module.exports = {
   devtool: 'source-map',
@@ -19,7 +20,9 @@ module.exports = {
     })
   },
   postcss: (ctx) => {
-    return cssStandards({ webpack: ctx })
+    const css = cssStandards({ webpack: ctx })
+    css.plugins.push(postcssEasyImport({ extensions: ['.sss'] }))
+    return css
   },
   babel: { presets: [jsStandards] },
   plugins: [
