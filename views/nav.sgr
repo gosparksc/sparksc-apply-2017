@@ -18,14 +18,14 @@
       li.nav-contact
         a(href='/contact.html') Contact
 
-    section#sm.sm
-      ul
-        li
-          a(href='https://www.facebook.com/gosparksc' target='_blank')
-            img(src='/img/sm/facebook.svg' alt='facebook')
-        li
-          a(href='https://twitter.com/gosparksc' target='_blank')
-            img(src='/img/sm/twitter.svg' alt='twitter')
-        li
-          a(href='https://instagram.com/gosparksc' target='_blank')
-            img(src='/img/sm/instagram.svg' alt='instagram')
+  section#sm.sm
+    ul
+      li
+        a(href='https://www.facebook.com/gosparksc' target='_blank')
+          img(src='/img/sm/facebook.svg' alt='facebook')
+      li
+        a(href='https://twitter.com/gosparksc' target='_blank')
+          img(src='/img/sm/twitter.svg' alt='twitter')
+      li
+        a(href='https://instagram.com/gosparksc' target='_blank')
+          img(src='/img/sm/instagram.svg' alt='instagram')

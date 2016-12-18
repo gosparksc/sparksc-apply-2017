@@ -1,3 +1,64 @@
-body
-  padding: 50px
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+
+@font-face
+  font-family: 'Proxima Nova'
+  src: url("../fonts/proximanova/ProximaNova-Regular.otf")
+
+@font-face
+  font-family: 'Proxima Nova Bold'
+  src: url("../fonts/proximanova/ProximaNova-Bold.otf")
+
+:root
+  /* general */
+
+  --desktop-min-height: 640px
+  --mobile-min-height: 320px
+  --menu-width: 110px
+  --menu-padding-lr: 10px
+  --menu-padding-tb: 30px
+  --menu-item-height-mobile: 85px
+
+  --content-box:
+    -webkit-box-sizing: content-box
+    -moz-box-sizing: content-box
+    box-sizing: content-box
+
+  --noselect:
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+  /* media queries */
+
+  --mobile-bp-lg: 992px
+  // --mobile-bp-md: 640px
+  --mobile-bp-sm: 480px
+
+  /* fonts */
+
+  --proxima-nova: "Proxima Nova", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
+  --helvetica-neue: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
+  --helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif
+  --georgia: Georgia, Cambria, "Times New Roman", Times, serif
+  --lucidia-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+  --monospace: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace
+  --verdana: Verdana, Geneva, sans-serif
+
+  // default font stack
+
+  --font-stack: var(--proxima-nova)
+  --font-size: 16
+
+  // ligatures
+  --ligatures: false
+
+  /* colors */
+
+  --spark-yellow: #fdbd15
+  --spark-black: #111
+  --spark-black-transparent: rgba(17, 17, 17, 0.95)
+
+  // text highlight color
+  --highlight-color: var(--spark-yellow)

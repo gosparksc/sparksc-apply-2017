@@ -1,0 +1,169 @@
+@import '_global.sss'
+@import 'normalize.sss'
+
+/* general */
+
+body
+  font-family: var(--font-stack)
+  font-size: var(--font-size)
+  min-height: var(--desktop-min-height)
+
+  &::selection
+    background: var(--highlight-color)
+
+.spacer-50
+  height: 50%
+  position: relative
+
+/* menu */
+
+.menu-icon
+  width: 50px
+  height: 50px
+  position: fixed 20px auto auto 20px
+  background: var(--spark-yellow)
+  border-radius: 1px
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3)
+  display: none
+  z-index: 100
+
+  &:hover
+    cursor: pointer
+
+  &.hamburger
+    &::before
+      content: '\2630'
+      position: absolute 0
+      color: white
+      font-size: 34px
+      text-align: center
+
+.menu
+  width: var(--menu-width)
+  min-height: var(--desktop-min-height)
+  position: fixed 0 auto 0 0
+  background: var(--spark-black)
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.25)
+  z-index: 99
+
+  @apply --noselect
+
+  & img
+    width: calc(var(--menu-width) - calc(var(--menu-padding-lr) * 2))
+    position: absolute var(--menu-padding-tb) var(--menu-padding-lr) auto var(--menu-padding-lr)
+
+  & .nav
+    height: 360px // approx. to enable verticle centering
+    margin: auto
+    position: absolute 0 auto
+
+    & ul
+      width: 100%
+      margin: 0
+      padding: 0
+      list-style: none
+
+      & li
+        width: calc(var(--menu-width) - calc(var(--menu-padding-lr) * 2))
+        margin: 0
+        padding: 24px var(--menu-padding-lr) 20px var(--menu-padding-lr)
+        font-size: 17px
+        font-weight: 600
+        text-align: center
+        text-transform: uppercase
+
+        @apply --content-box
+
+        &.selected
+          background: #222
+
+        & a
+          text-decoration: none
+          color: white
+
+        &:hover
+          color: var(--spark-yellow)
+
+  & .sm
+    width: calc(var(--menu-width) - calc(var(--menu-padding-lr) * 2))
+    position: absolute auto var(--menu-padding-lr) var(--menu-padding-tb) var(--menu-padding-lr)
+
+    & ul
+      width: 100%
+      margin: 0
+      padding: 0
+      list-style: none
+
+      & li
+        width: 100%
+        margin: 0
+        padding: 0
+        text-align: center
+
+        & a
+          text-decoration: none
+
+          & img
+            width: 38px
+            height: 38px
+            padding-top: 4px
+            position: relative 0 auto auto 0
+
+/* content */
+
+.content
+  min-height: var(--desktop-min-height)
+  position: absolute 0 0 0 var(--menu-width)
+  z-index: 1
+
+/* media queries */
+
+@media only screen and (max-width: $mobile-bp-lg)
+  body
+    min-height: $mobile-min-height
+
+  .menu-icon
+    display: block
+    // background none
+    // box-shadow none
+
+    & .hamburger
+
+      // &:before
+      //   content '\00D7'
+      //   font-size 54px
+      //   font-weight bold
+
+  .menu
+    width: 100%
+    min-height: 0
+    position: fixed 0
+    background: var(--spark-black-transparent)
+    box-shadow: none
+    display: none /* TOGGLE */
+
+    & .nav
+      width: 100%
+      height: var(--menu-item-height-mobile) * 4
+      padding: 0
+
+      & ul
+        width: 100%
+        height: 100%
+
+        & li
+          width: 100%
+          height: var(--menu-item-height-mobile)
+          margin: 0
+          padding: 0
+          line-height: var(--menu-item-height-mobile)
+          font-size: 28px
+          letter-spacing: 2px
+
+  .content
+    left: 0
+    min-height: $mobile-min-height
+
+  .logo,
+  .sm
+    display: none
