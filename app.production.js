@@ -1,6 +1,7 @@
 const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const pageId = require('spike-page-id')
+const postcssEasyImport = require('postcss-easy-import')
 const {UglifyJsPlugin, DedupePlugin, OccurrenceOrderPlugin} = require('webpack').optimize
 
 module.exports = {
