@@ -15,10 +15,8 @@ html
       link(rel='stylesheet' href='css/index.css')
 
   body(role='document')
-  
-    include(src='nav.sgr')
 
-    main(role='main' id='{{ pageId }}')
+    div(class="wrapper" id='{{ pageId }}')
       block(name='content')
 
     block(name='javascript')

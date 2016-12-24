@@ -1,1 +1,28 @@
 @import 'master.sss'
+
+:root
+  --banner-overlap: 100px
+
+header
+  background-color: var(--spark-black)
+
+.section
+  position: relative
+
+.section-content
+  margin: 0 auto
+  max-width: 1000px
+  padding: 80px 2.5%
+
+  &.jumbotron
+    padding-top: 100px
+    padding-bottom: calc(100px + var(--banner-overlap))
+    text-align: center
+
+  &.with-banner
+    padding-top: 0
+
+.banner
+  background-color: var(--spark-yellow)
+  padding: 80px
+  transform: translateY(-var(--banner-overlap))
