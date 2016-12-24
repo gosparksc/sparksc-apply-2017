@@ -1,7 +1,9 @@
 @import 'master.sss'
 
 :root
-  --banner-overlap: 100px
+  --banner-overlap: 80px
+
+@custom-media --mobile (max-width: 400px)
 
 header
   background-color: var(--spark-black)
@@ -23,6 +25,43 @@ header
     padding-top: 0
 
 .banner
-  background-color: var(--spark-yellow)
+  position: relative
+  background-color: white
   padding: 80px
-  transform: translateY(-var(--banner-overlap))
+  margin: 0 100px
+  top: -var(--banner-overlap)
+
+/* Button */
+
+button
+  border: 0
+  display: block
+  padding: 0
+
+  &.apply-button
+    background-color: var(--spark-yellow)
+    border-radius: 4px
+    color: white
+    font-size: 20px
+    font-weight: 600
+    margin: 0 auto
+    padding: 16px 16px 15px
+    text-align: center
+    text-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px
+    transition: all 250ms ease-out-back
+    width: 250px
+
+    &:hover
+      box-shadow: 0 8px 20px -2px rgba(0, 0, 0, 0.2)
+      transform: scale(1.05)
+
+/* Flex Grid */
+
+.row
+  display: flex
+
+  @media (--mobile)
+    display: block
+
+.col
+  flex: 1
