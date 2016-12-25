@@ -2,7 +2,9 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const pageId = require('spike-page-id')
 const postcssEasyImport = require('postcss-easy-import')
+const Records = require('spike-records')
 const {UglifyJsPlugin, DedupePlugin, OccurrenceOrderPlugin} = require('webpack').optimize
+const locals = {}
 
 module.exports = {
   // disable source maps
@@ -21,7 +23,7 @@ module.exports = {
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
-      locals: { pageId: pageId(ctx), foo: 'bar' },
+      locals: Object.assign({ pageId: pageId(ctx) }, locals),
       minify: true
     })
   },
@@ -34,5 +36,11 @@ module.exports = {
     })
     css.plugins.push(postcssEasyImport({ extensions: ['.sss'] }))
     return css
-  }
+  },
+  plugins: [
+    new Records({
+      addDataTo: locals,
+      data: { file: 'data/data.json' }
+    })
+  ]
 }
