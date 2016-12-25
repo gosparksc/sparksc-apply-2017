@@ -15,6 +15,7 @@
     "reshape-standard": "^0.4.2",
     "spike-css-standards": "^0.1.3",
     "spike-page-id": "^0.1.0",
+    "spike-records": "^0.4.0",
     "webpack": "^1.13.3"
   },
   "devDependencies": {
@@ -37,7 +38,9 @@
     "pretest": "npm run lint -s",
     "test": "NODE_ENV=test ava"
   },
-  "pre-commit": [ "precommit" ],
+  "pre-commit": [
+    "precommit"
+  ],
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {

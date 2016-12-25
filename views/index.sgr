@@ -14,10 +14,10 @@ extends(src='layout.sgr')
         div(class='row')
           p We're looking for optimistic and committed student leaders to join our family and help us do great things. We all come from a variety of backgrounds, and we find our common ground in our excitement for Spark SC’s mission and in our shared values.
         div(class='grid-row')
-          each(loop='item in [1,2,3]')
+          each(loop='item in data.values')
             div
-              h3 Inclusivity
-              p We welcome you, as you are, to join us in Spark SC.
+              h3 {{ item.title }}
+              p {{ item.description }}
 
 
 
