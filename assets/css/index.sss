@@ -9,6 +9,10 @@
 
 @custom-media --mobile (max-width: 400px)
 
+h3
+  font-size: 1rem
+  margin: 0
+
 header
   background-color: var(--spark-black)
 
@@ -36,17 +40,17 @@ header
 
   background-color: white
   color: var(--spark-black)
-  font-family: var(--merriweather)
   margin-bottom: -var(--banner-overlap) // Accounts for upwards translation
   position: relative
   padding: 35px 50px
   top: -var(--banner-overlap)
 
   & h2
+    font-family: var(--merriweather)
+    font-size: 1.6rem
     font-style: regular
     font-weight: 900
-    font-size: 2rem
-    line-height: 3rem
+    line-height: 2.4rem
     margin: 0
 
 /* Button */
@@ -80,12 +84,18 @@ button
 
   padding: 25px 0
 
+  & > p
+    font-size: 1.2rem
+    line-height: 2rem
+
 .grid-row
   display: flex
+  padding: 25px 0
+  justify-content: space-between
 
   @media (--mobile)
     display: block
 
-.col
-  flex: 1
-  background-color: var(--spark-yellow)
+  & > div
+    //background-color: var(--spark-yellow)
+    width: 31%
