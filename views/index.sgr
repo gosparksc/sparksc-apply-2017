@@ -6,14 +6,14 @@ extends(src='layout.sgr')
       div(class='section section-content jumbotron')
         h1 Spark SC
     main(role='main')
-      div(class='section section-content with-banner')
+      div(class='section section-content with-banner' id='section-1')
         div(class='banner')
-          p Test Content
-        div
-          button(class='apply-button') Apply to Spark SC
-        div(class='')
-          p More content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h2 Joining Spark SC is your opportunity to get involved with the planning and execution of some of the largest events and initiatives on the USC campus.
         div(class='row')
+          button(class='apply-button') Apply to Spark SC
+        div(class='row')
+          p We're looking for optimistic and committed student leaders to join our family and help us do great things.
+        div(class='grid-row')
           each(loop='item in [1,2,3]')
             div(class='col')
               p Column {{ item }}

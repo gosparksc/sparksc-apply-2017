@@ -3,6 +3,10 @@
 :root
   --banner-overlap: 80px
 
+  --one-col:
+    margin: 0 auto
+    width: 700px
+
 @custom-media --mobile (max-width: 400px)
 
 header
@@ -10,6 +14,9 @@ header
 
 .section
   position: relative
+
+  &#section-1
+    // background-color: #eee
 
 .section-content
   margin: 0 auto
@@ -25,11 +32,22 @@ header
     padding-top: 0
 
 .banner
-  position: relative
+  @apply --one-col
+
   background-color: white
-  padding: 80px
-  margin: 0 100px
+  color: var(--spark-black)
+  font-family: var(--merriweather)
+  margin-bottom: -var(--banner-overlap) // Accounts for upwards translation
+  position: relative
+  padding: 35px 50px
   top: -var(--banner-overlap)
+
+  & h2
+    font-style: regular
+    font-weight: 900
+    font-size: 2rem
+    line-height: 3rem
+    margin: 0
 
 /* Button */
 
@@ -58,6 +76,11 @@ button
 /* Flex Grid */
 
 .row
+  @apply --one-col
+
+  padding: 25px 0
+
+.grid-row
   display: flex
 
   @media (--mobile)
@@ -65,3 +88,4 @@ button
 
 .col
   flex: 1
+  background-color: var(--spark-yellow)
