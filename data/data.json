@@ -58,5 +58,23 @@
       "title": "A Mystery Committee",
       "description": "Find a new opportunity that fits with Spark SC’s mission to inspire a culture of innovation, expose students to their creative potential, and connect makers across diverse communities."
     }
+  ],
+  "questions": [
+    {
+      "question": "What is the application process?",
+      "answer": "The application is three rounds: The written application [INSERT LINK], due [DUE DATE], an individual interview, and a team-based group interview. Applicants are notified as to their application status after every round, regardless if they are accepted into the next round. After the group interview, Spark SC will welcome its new class of \"Sparklets!\""
+    },
+    {
+      "question": "How long is the application process?",
+      "answer": "The application process takes about 10 days, starting from the day the written application is due."
+    },
+    {
+      "question": "Is Spark SC a computer science club?",
+      "answer": "Nope! We do much more than just coding and hacking."
+    },
+    {
+      "question": "Do you have to be an engineering or business major to apply?",
+      "answer": "No! We want you to apply, whatever your major or interest. We have members from many schools at USC, and our members have a wide variety of skills and interests."
+    }
   ]
 }
