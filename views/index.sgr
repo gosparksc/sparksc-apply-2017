@@ -8,18 +8,29 @@ extends(src='layout.sgr')
     main(role='main')
       div(class='section section-content with-banner' id='section-1')
         div(class='banner')
-          h2 Joining Spark SC is your opportunity to get involved with the planning and execution of some of the largest events and initiatives on the USC campus.
-        div(class='row')
+          div(class='callout') Joining Spark SC is your opportunity to get involved with the planning and execution of some of the largest events and initiatives on the USC campus.
           button(class='apply-button') Apply to Spark SC
         div(class='row')
+          h2 What We're Looking For
           p We're looking for optimistic and committed student leaders to join our family and help us do great things. We all come from a variety of backgrounds, and we find our common ground in our excitement for Spark SC’s mission and in our shared values.
-        div(class='grid-row')
+        div(class='grid-row thirds')
           each(loop='item in data.values')
             div
               h3 {{ item.title }}
               p {{ item.description }}
-
-
+      div(class='section' id='section-2')
+        div(class='section-content')
+          div(class='row')
+            h2 What We Do
+            p What will you work on in Spark SC? Each project we work on has its own committee, which is a dedicated team of Spark SC members. Most Spark SC members participate in multiple committees. Here are some of the committees you could work on:
+          div(class='grid-row halves')
+            each(loop='item, index in data.committees')
+              div(class='{{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
+                h3 {{ item.title }}
+                p {{ item.description }}
+    footer
+      div(class='section section-content')
+        p Footer
 
     // h2 Hello World!
     // p Thanks for using <a href='https://github.com/static-dev/spike'>spike</a>

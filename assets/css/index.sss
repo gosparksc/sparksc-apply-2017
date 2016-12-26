@@ -9,12 +9,17 @@
 
 @custom-media --mobile (max-width: 400px)
 
+h2
+  font-size: 1.2rem
+  margin: 0
+
 h3
   font-size: 1rem
   margin: 0
 
 header
   background-color: var(--spark-black)
+  color: white
 
 .section
   position: relative
@@ -22,10 +27,13 @@ header
   &#section-1
     // background-color: #eee
 
+  &#section-2
+    background-color: #f3f3f3
+
 .section-content
   margin: 0 auto
   max-width: 1000px
-  padding: 80px 2.5%
+  padding: 60px 2.5%
 
   &.jumbotron
     padding-top: 100px
@@ -45,13 +53,13 @@ header
   padding: 35px 50px
   top: -var(--banner-overlap)
 
-  & h2
+  & .callout
     font-family: var(--merriweather)
     font-size: 1.6rem
     font-style: regular
     font-weight: 900
     line-height: 2.4rem
-    margin: 0
+    margin: 0 0 30px
 
 /* Button */
 
@@ -90,12 +98,20 @@ button
 
 .grid-row
   display: flex
-  padding: 25px 0
+  flex-direction: row
+  flex-wrap: wrap
   justify-content: space-between
+  padding: 25px 0
 
   @media (--mobile)
     display: block
 
-  & > div
-    //background-color: var(--spark-yellow)
-    width: 31%
+  &.halves > div
+    padding: calc(var(--font-size) / 2) 0
+    width: 47%
+
+    &.last-item-odd
+      margin: auto
+
+  &.thirds > div
+    width: 30%
