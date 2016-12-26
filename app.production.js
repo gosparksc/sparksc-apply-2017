@@ -13,7 +13,11 @@ module.exports = {
   plugins: [
     new UglifyJsPlugin(),
     new DedupePlugin(),
-    new OccurrenceOrderPlugin()
+    new OccurrenceOrderPlugin(),
+    new Records({
+      addDataTo: locals,
+      data: { file: 'data/data.json' }
+    })
   ],
   // image optimization
   module: {
@@ -36,11 +40,5 @@ module.exports = {
     })
     css.plugins.push(postcssEasyImport({ extensions: ['.sss'] }))
     return css
-  },
-  plugins: [
-    new Records({
-      addDataTo: locals,
-      data: { file: 'data/data.json' }
-    })
-  ]
+  }
 }
