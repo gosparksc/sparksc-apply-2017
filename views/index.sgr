@@ -1,7 +1,5 @@
 extends(src='layout.sgr')
   block(name='content')
-    nav
-      a(href='http://www.sparksc.org') Return
     header
       div(class='section section-content jumbotron')
         object(type='image/svg+xml' data='img/apply/logo.svg')
@@ -12,7 +10,9 @@ extends(src='layout.sgr')
       div(class='section section-content with-banner' id='section-1')
         div(class='banner')
           div(class='callout') Joining Spark SC is your opportunity to get involved with the planning and execution of some of the largest events and initiatives on the USC campus.
-          button(class='fancy-button apply') Apply to Spark SC
+          button(class='fancy-button apply')
+            i(class="fa fa-paper-plane" aria-hidden="true")
+            | Apply
         div(class='row')
           h2 What We're Looking For
           p We're looking for optimistic and committed student leaders to join our family and help us do great things. We all come from a variety of backgrounds, and we find our common ground in our excitement for Spark SC’s mission and in our shared values.
@@ -43,9 +43,21 @@ extends(src='layout.sgr')
         div(class='section-content')
           div(class='row')
             div(class='callout bottom') We want you here!
-            button(class='fancy-button apply') Apply to Spark SC
+            button(class='fancy-button apply')
+              i(class="fa fa-paper-plane" aria-hidden="true")
+              | Apply
       div(class='section collage' id='section-5')
         img(src='img/apply/collage.jpg')
     footer
       div(class='section section-content')
-        button(class='fancy-button return') Apply to Spark SC
+        div(class='grid-row')
+          div(class='left')
+            button(class='fancy-button return left')
+              i(class="fa fa-arrow-left" aria-hidden="true")
+              | Spark SC Home
+          div(class='right')
+            div
+              | Made with&nbsp;
+              i(class="fa fa-heart-o" aria-hidden="true" title="love")
+              span(class='sr-only') love
+              | &nbsp;by Spark SC
