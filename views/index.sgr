@@ -18,7 +18,8 @@ extends(src='layout.sgr')
           p We're looking for optimistic and committed student leaders to join our family and help us do great things. We all come from a variety of backgrounds, and we find our common ground in our excitement for Spark SC’s mission and in our shared values.
         div(class='grid-row thirds')
           each(loop='item in data.values')
-            div
+            div(class='main-row-item')
+              i(class="fa fa-{{ item.icon }} fa-lg" aria-hidden="true")
               h3 {{ item.title }}
               p {{ item.description }}
       div(class='section' id='section-2')

@@ -2,15 +2,18 @@
   "values": [
     {
       "title": "Inclusivity",
-      "description": "We welcome you, as you are, to join us in Spark SC."
+      "description": "We welcome you, as you are, to join us in Spark SC.",
+      "icon": "users"
     },
     {
       "title": "Optimism",
-      "description": "We welcome you, as you are, to join us in Spark SC."
+      "description": "We welcome you, as you are, to join us in Spark SC.",
+      "icon": "star"
     },
     {
       "title": "Family",
-      "description": "We welcome you, as you are, to join us in Spark SC."
+      "description": "We welcome you, as you are, to join us in Spark SC.",
+      "icon": "heart"
     }
   ],
   "committees": [
