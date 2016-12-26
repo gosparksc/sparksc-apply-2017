@@ -28,6 +28,12 @@ footer
   background-color: var(--spark-black)
   color: white
 
+header
+  border-bottom: 10px solid var(--spark-yellow)
+
+footer
+  border-top: 10px solid var(--spark-yellow)
+
 .section
   position: relative
 
@@ -54,9 +60,19 @@ footer
   padding: 60px 2.5%
 
   &.jumbotron
-    padding-top: 100px
-    padding-bottom: calc(100px + var(--banner-overlap))
+    padding-top: 70px
+    padding-bottom: calc(20px + var(--banner-overlap))
     text-align: center
+
+    & object
+      width: 350px
+
+    & h2
+      margin-top: 2rem
+
+    & h3
+      color: var(--spark-yellow)
+      margin-top: 0.5rem
 
   &.with-banner
     padding-top: 0
