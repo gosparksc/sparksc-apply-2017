@@ -35,7 +35,7 @@ extends(src='layout.sgr')
           each(loop='item, index in data.questions')
             div(class='row')
               h3 {{ item.question }}
-              p {{ item.answer }}
+              p {{{ item.answer }}}
     footer
       div(class='section section-content')
         p Footer
