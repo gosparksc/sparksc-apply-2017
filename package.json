@@ -54,7 +54,10 @@
       "declaration-block-semicolon-newline-after": null,
       "declaration-block-semicolon-space-after": null,
       "declaration-block-semicolon-space-before": null,
-      "declaration-block-trailing-semicolon": null
+      "declaration-block-trailing-semicolon": null,
+      "property-no-unknown": [ true, {
+        "ignoreProperties": ["font-range"]
+        }]
     },
     "ignoreFiles": [
       "node_modules",
