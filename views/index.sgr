@@ -55,9 +55,10 @@ extends(src='layout.sgr')
       div(class='section section-content')
         div(class='grid-row')
           div(class='left')
-            button(class='fancy-button return')
-              i(class="fa fa-arrow-left" aria-hidden="true")
-              | Spark SC Home
+            a(href="http://sparksc.org" target="_blank")
+              button(class='fancy-button return')
+                i(class="fa fa-arrow-left" aria-hidden="true")
+                | Spark SC Home
           div(class='right')
             div
               | Made with&nbsp;
