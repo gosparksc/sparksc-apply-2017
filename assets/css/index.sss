@@ -2,12 +2,13 @@
 
 :root
   --banner-overlap: 80px
+  --mobile-bp: 500px
 
   --one-col:
     margin: 0 auto
-    width: 700px
+    max-width: 700px
 
-@custom-media --mobile (max-width: 400px)
+@custom-media --mobile (max-width: 500px) // Also change this value for --mobile-bp
 
 body
   background-color: var(--spark-black)
@@ -42,6 +43,14 @@ footer
     align-items: baseline
     padding: 0
 
+    & > div
+      @media (--mobile)
+        display: block
+        margin: auto
+
+        &.right
+          padding-top: 2rem
+
 .section
   position: relative
 
@@ -65,7 +74,7 @@ footer
 .section-content
   margin: 0 auto
   max-width: 1000px
-  padding: 60px 2.5%
+  padding: 60px 5%
 
   &.jumbotron
     padding-top: 70px
@@ -73,7 +82,8 @@ footer
     text-align: center
 
     & object
-      width: 350px
+      max-width: 350px
+      margin: 0 20px
 
     & h2
       margin-top: 2rem
@@ -92,12 +102,13 @@ footer
   color: var(--spark-black)
   margin-bottom: -var(--banner-overlap) // Accounts for upwards translation
   position: relative
-  padding: 35px 50px
+  padding: 3.5% 5% 35px
   top: -var(--banner-overlap)
 
 .callout
   font-family: var(--merriweather)
-  font-size: 1.6rem
+  font-range: var(--mobile-bp) calc(var(--mobile-bp) + 200px)
+  font-size: responsive 1.4rem 1.6rem
   font-style: regular
   font-weight: 900
   line-height: 2.4rem
@@ -151,7 +162,8 @@ button
   padding: 25px 0
 
   & > p
-    font-size: 1.2rem
+    font-range: 320px 350px
+    font-size: responsive 1rem 1.2rem
     line-height: 2rem
 
 .grid-row
@@ -161,9 +173,6 @@ button
   justify-content: space-between
   padding: 25px 0
 
-  @media (--mobile)
-    display: block
-
   &.halves > div
     padding: calc(var(--font-size) / 2) 0
     width: 47%
@@ -171,8 +180,14 @@ button
     &.last-item-odd
       margin: auto
 
+    @media (--mobile)
+      width: 100%
+
   &.thirds > div
     width: 30%
+
+    @media (--mobile)
+      width: 100%
 
   & .main-row-item i
     color: var(--spark-yellow)
