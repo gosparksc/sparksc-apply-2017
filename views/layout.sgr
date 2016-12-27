@@ -1,5 +1,5 @@
 doctype html
-html
+html(id='{{ pageId }}')
   head
     block(name='meta')
       meta(charset='utf-8')
@@ -10,6 +10,9 @@ html
       link(href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet")
       link(href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet")
 
+    block(name='meta-viewport')
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+
     block(name='title')
       title Spark SC &middot; Student Innovation at USC
 
@@ -18,7 +21,7 @@ html
 
   body(role='document')
 
-    div(class="wrapper" id='{{ pageId }}')
+    div(class="wrapper")
       block(name='content')
 
     block(name='javascript')

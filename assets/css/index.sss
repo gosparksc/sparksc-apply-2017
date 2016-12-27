@@ -23,6 +23,9 @@ h3
   font-size: 1rem
   margin: 0
 
+a
+  text-decoration: none
+
 header,
 footer
   background-color: var(--spark-black)
@@ -128,6 +131,10 @@ button
       box-shadow: 0 8px 20px -2px rgba(0, 0, 0, 0.2)
       transform: scale(1.05)
 
+    &:active
+      box-shadow: 0 8px 20px -2px rgba(0, 0, 0, 0.2)
+      transform: scale(0.98)
+
     &.apply
       background-color: var(--spark-yellow)
       color: white
@@ -171,3 +178,27 @@ button
     color: var(--spark-yellow)
     margin-bottom: 0.5rem
     margin-left: -2px
+
+html#form
+  margin: 0
+  height: 100%
+  overflow: hidden
+
+  & iframe
+    position: absolute 0
+    border: 0
+    z-index: 10
+
+  & body
+    background-color: #faf7ed
+
+  & nav
+    display: block
+    position: absolute 20px 0 auto 0
+    z-index: 100
+
+    & .fancy-button
+      color: white
+
+      &.return
+        background-color: var(--spark-yellow)
