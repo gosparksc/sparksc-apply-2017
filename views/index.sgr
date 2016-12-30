@@ -35,13 +35,17 @@ extends(src='layout.sgr')
                   div(class='key-box')
                     span(id='red')
                       div(class='key-item') CODING
+                  div(class='key-box')
+                    span(id='green')
+                      div(class='key-item') OUTREACH
 
           div(class='grid-row halves')
             each(loop='item, index in data.committees')
-              div(class='red {{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
-                div(class='card-content')
-                  h3 {{ item.title }}
-                    p {{ item.description }}
+                div(class='red {{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
+                  a(class='nostyle' href='{{ item.url }}')
+                    div(class='card-content')
+                      h3 {{ item.title }}
+                        p {{ item.description }}
       div(class='section' id='section-3')
         div(class='section-content')
           div(class='row')

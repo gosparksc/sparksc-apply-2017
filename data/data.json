@@ -19,47 +19,58 @@
   "committees": [
     {
       "title": "Startup Career Fair",
-      "description": "A flagship event in the spring semester, the Spark SC Startup Career Fair brings out top L.A. startups to connect with students in mid-February. Work on outreach and logistics to help strengthen USC’s connection to the startups in Los Angeles."
+      "description": "A flagship event in the spring semester, the Spark SC Startup Career Fair brings out top L.A. startups to connect with students in mid-February. Work on outreach and logistics to help strengthen USC’s connection to the startups in Los Angeles.",
+      "url": "http://sparksc.org/events/startup-career-fair.html"
     },
     {
       "title": "State of the Arts",
-      "description": "State of the Arts is an art fair that exists at the confluence of art, food, fashion, entertainment and entrepreneurship. Build relationships with exhibitors, speakers, and community members, plan logistics, and work on marketing for this one-of-a-kind event."
+      "description": "State of the Arts is an art fair that exists at the confluence of art, food, fashion, entertainment and entrepreneurship. Build relationships with exhibitors, speakers, and community members, plan logistics, and work on marketing for this one-of-a-kind event.",
+      "url": "http://sparksc.org/events/state-of-the-arts.html"
     },
     {
       "title": "USC Hackers",
-      "description":" Make an impact in the USC coding and hacking community by joining USC Hackers. Throw monthly hack nights and large-scale events that lower the barriers of entry to hacking and bring the community together."
+      "description":" Make an impact in the USC coding and hacking community by joining USC Hackers. Throw monthly hack nights and large-scale events that lower the barriers of entry to hacking and bring the community together.",
+      "url": "http://sparksc.org/events/usc-hackers.html"
     },
     {
       "title": "Project Launch",
-      "description": "Design and manage a social entrepreneurship project, collaborate with nonprofits, and give back to the surrounding LA community. Project Launch helps inner-city LA high school students build the hard skills, soft skills, and growth mindset needed in leaders of the next generation."
+      "description": "Design and manage a social entrepreneurship project, collaborate with nonprofits, and give back to the surrounding LA community. Project Launch helps inner-city LA high school students build the hard skills, soft skills, and growth mindset needed in leaders of the next generation.",
+      "url": "http://projectlaunch.io/"
     },
     {
       "title": "TechLA Fellows",
-      "description": "Help connect students with paid internships in Los Angeles through the TechLA Fellows program. Build the TechLA brand, familiarize yourself with LA companies and recruiters, and be the interface between USC and the LA startup community."
+      "description": "Help connect students with paid internships in Los Angeles through the TechLA Fellows program. Build the TechLA brand, familiarize yourself with LA companies and recruiters, and be the interface between USC and the LA startup community.",
+      "url": "http://fellows.tech.la/"
     },
     {
       "title": "Podcast",
-      "description": "Spark XM, the Spark SC Podcast, highlights outstanding faculty, alumni, and student entrepreneurs in entertaining 20 minute long podcast episodes. Help us plan, record, and produce great audio content that gets published to the iTunes podcast store."
+      "description": "Spark XM, the Spark SC Podcast, highlights outstanding faculty, alumni, and student entrepreneurs in entertaining 20 minute long podcast episodes. Help us plan, record, and produce great audio content that gets published to the iTunes podcast store.",
+      "url": "https://itunes.apple.com/us/podcast/spark-xm-podcast/id1142741446?mt=2"
     },
     {
       "title": "Safari",
-      "description": "This is your opportunity to get connected to the growing tech scene in Los Angeles—reach out to founders, build relationships with companies, and set up \"field trips\" to companies for students."
+      "description": "This is your opportunity to get connected to the growing tech scene in Los Angeles—reach out to founders, build relationships with companies, and set up \"field trips\" to companies for students.",
+      "url": "http://sparksc.org/events/tech-tours.html"
     },
     {
       "title": "Venture Studios",
-      "description": "Help connect students with paid internships in Los Angeles through the TechLA Fellows program. Build the TechLA brand, familiarize yourself with LA companies and recruiters, and be the interface between USC and the LA startup community."
+      "description": "Help connect students with paid internships in Los Angeles through the TechLA Fellows program. Build the TechLA brand, familiarize yourself with LA companies and recruiters, and be the interface between USC and the LA startup community.",
+      "url": ""
     },
     {
       "title": "Media",
-      "description": "Spark SC hosts events that bring hundreds of students together and promote a culture of entrepreneurship at USC. Help us capture the excitement at our events through photography and videography, and produce videos for distribution to the community."
+      "description": "Spark SC hosts events that bring hundreds of students together and promote a culture of entrepreneurship at USC. Help us capture the excitement at our events through photography and videography, and produce videos for distribution to the community.",
+      "url": ""
     },
     {
       "title": "Graphics",
-      "description": "Design and spread Spark SC’s vision. Create marketing campaigns and promotions so that the whole campus can see what we’re up to and get involved. See your work plastered on bulletins and event pages."
+      "description": "Design and spread Spark SC’s vision. Create marketing campaigns and promotions so that the whole campus can see what we’re up to and get involved. See your work plastered on bulletins and event pages.",
+      "url": ""
     },
     {
       "title": "A Mystery Committee",
-      "description": "Find a new opportunity that fits with Spark SC’s mission to inspire a culture of innovation, expose students to their creative potential, and connect makers across diverse communities."
+      "description": "Find a new opportunity that fits with Spark SC’s mission to inspire a culture of innovation, expose students to their creative potential, and connect makers across diverse communities.",
+      "url": "mailto:bstanfie@usc.edu?subject:=I have an idea&body=Hey Ben,"
     }
   ],
   "questions": [
