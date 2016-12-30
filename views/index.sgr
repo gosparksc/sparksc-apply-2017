@@ -16,23 +16,32 @@ extends(src='layout.sgr')
               | Apply
         div(class='row')
           h2 What We're Looking For
-          p We're looking for optimistic and committed student leaders to join our family and help us do great things. We all come from a variety of backgrounds, and we find our common ground in our excitement for Spark SC’s mission and in our shared values.
+          p(class='info') We're looking for optimistic and committed student leaders to join our family and help us do great things. We all come from a variety of backgrounds, and we find our common ground in our excitement for Spark SC’s mission and in our shared values.
         div(class='grid-row thirds')
           each(loop='item in data.values')
             div(class='main-row-item')
-              i(class="fa fa-{{ item.icon }} fa-lg" aria-hidden="true")
-              h3 {{ item.title }}
-              p {{ item.description }}
+              div(class='temp-circle')
+              h3(class="center") {{ item.title }}
+              p(class="center") {{ item.description }}
       div(class='section' id='section-2')
         div(class='section-content')
           div(class='row')
             h2 What We Do
-            p What will you work on in Spark SC? Each project we work on has its own committee, which is a dedicated team of Spark SC members. Most Spark SC members participate in multiple committees. Here are some of the committees you could work on:
+            p What will you do in Spark SC? Each project we work on has its own <strong><em>committee,</em></strong> which is a dedicated team of Spark SC members. Most members participate in multiple committees. Here are some of the committees you could work on:
+              div(class='key')
+                div(class='key-box-first')
+                  span(id='blue')
+                    div(class='key-item') DESIGN
+                  div(class='key-box')
+                    span(id='red')
+                      div(class='key-item') CODING
+
           div(class='grid-row halves')
             each(loop='item, index in data.committees')
-              div(class='{{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
-                h3 {{ item.title }}
-                p {{ item.description }}
+              div(class='red {{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
+                div(class='card-content')
+                  h3 {{ item.title }}
+                    p {{ item.description }}
       div(class='section' id='section-3')
         div(class='section-content')
           div(class='row')
@@ -63,5 +72,5 @@ extends(src='layout.sgr')
             div
               | Made with&nbsp;
               i(class="fa fa-heart-o" aria-hidden="true" title="love")
-              span(class='sr-only') love
+              B(class='sr-only') love
               | &nbsp;by Spark SC
