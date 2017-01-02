@@ -20,7 +20,7 @@ extends(src='layout.sgr')
         div(class='grid-row thirds')
           each(loop='item in data.values')
             div(class='main-row-item')
-              div(class='temp-circle')
+              div(class='{{ item.circle }}')
               h3(class="center") {{ item.title }}
               p(class="center") {{ item.description }}
       div(class='section' id='section-2')
@@ -28,23 +28,24 @@ extends(src='layout.sgr')
           div(class='row')
             h2 What We Do
             p What will you do in Spark SC? Each project we work on has its own <strong><em>committee,</em></strong> which is a dedicated team of Spark SC members. Most members participate in multiple committees. Here are some of the committees you could work on:
-              div(class='key')
-                div(class='key-box-first')
-                  span(id='blue')
-                    div(class='key-item') DESIGN
-                  div(class='key-box')
-                    span(id='red')
-                      div(class='key-item') CODING
-                  div(class='key-box')
-                    span(id='green')
-                      div(class='key-item') OUTREACH
+              // div(class='key')
+              //   div(class='key-box-first')
+              //     span(id='blue')
+              //       div(class='key-item') DESIGN
+              //     div(class='key-box')
+              //       span(id='red')
+              //         div(class='key-item') CODING
+              //     div(class='key-box')
+              //       span(id='green')
+              //         div(class='key-item') OUTREACH
 
           div(class='grid-row halves')
             each(loop='item, index in data.committees')
-                div(class='red {{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
+                div(class='card {{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
                   a(class='nostyle' href='{{ item.url }}')
                     div(class='card-content')
-                      h3 {{ item.title }}
+                      i(class='{{ item.icon }}' aria-hidden="true")
+                      h3(class='card-title') {{ item.title }}
                         p {{ item.description }}
       div(class='section' id='section-3')
         div(class='section-content')
@@ -52,8 +53,10 @@ extends(src='layout.sgr')
             h2 Frequently Asked Questions
           each(loop='item, index in data.questions')
             div(class='row')
-              h3 {{ item.question }}
-              p {{{ item.answer }}}
+                span(id='question')
+                  i(class='fa fa-question' aria-hidden="true")
+                h3(class='question-title') {{ item.question }}
+                  p(id='question-par') {{{ item.answer }}}
       div(class='section' id='section-4')
         div(class='section-content')
           div(class='row')
