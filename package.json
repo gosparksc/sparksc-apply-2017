@@ -57,7 +57,7 @@
       "declaration-block-trailing-semicolon": null,
       "max-empty-lines": 2,
       "property-no-unknown": [ true, {
-        "ignoreProperties": ["font-range"]
+        "ignoreProperties": ["font-range", "font-path"]
         }]
     },
     "ignoreFiles": [
