@@ -27,18 +27,7 @@ extends(src='layout.sgr')
         div(class='section-content')
           div(class='row')
             h2 What We Do
-            p What will you do in Spark SC? Each project we work on has its own <strong><em>committee,</em></strong> which is a dedicated team of Spark SC members. Most members participate in multiple committees. Here are some of the committees you could work on:
-              // div(class='key')
-              //   div(class='key-box-first')
-              //     span(id='blue')
-              //       div(class='key-item') DESIGN
-              //     div(class='key-box')
-              //       span(id='red')
-              //         div(class='key-item') CODING
-              //     div(class='key-box')
-              //       span(id='green')
-              //         div(class='key-item') OUTREACH
-
+            p What will you do in Spark SC? Each project we work on has its own <strong>committee,</strong> which is a dedicated team of Spark SC members. Most members participate in multiple committees. Here are some of the committees you could work on:
           div(class='grid-row halves')
             each(loop='item, index in data.committees')
                 div(class='card {{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')

@@ -55,6 +55,7 @@
       "declaration-block-semicolon-space-after": null,
       "declaration-block-semicolon-space-before": null,
       "declaration-block-trailing-semicolon": null,
+      "max-empty-lines": 2,
       "property-no-unknown": [ true, {
         "ignoreProperties": ["font-range"]
         }]
