@@ -2,13 +2,14 @@
 
 :root
   --banner-overlap: 80px
-  --mobile-bp: 500px
+  --mobile-bp: 600px // Also change this value for @custom-media --mobile
 
   --one-col:
     margin: 0 auto
     max-width: 700px
 
-@custom-media --mobile (max-width: 500px) // Also change this value for --mobile-bp
+@custom-media --mobile (max-width: 600px) // Also change this value for --mobile-bp
+@custom-media --illustration (max-width: 900px)
 
 body
   background-color: var(--spark-black)
@@ -16,15 +17,12 @@ body
 .wrapper
   background-color: white
 
-p
-  font-family: Proxima Nova
-
 h2
   font-size: 1.5rem
   margin-bottom: -10px
 
 h3
-  font-size: 1rem
+  font-size: 1.2rem
   margin-bottom: -10px
   margin-top: 0
 
@@ -49,14 +47,28 @@ footer
   & .grid-row
     align-items: baseline
     padding: 0
+    margin: 1rem auto
+
+    @media (--mobile)
+      display: block
 
     & > div
-      @media (--mobile)
-        display: block
-        margin: auto
+      width: 50%
 
-        &.right
-          padding-top: 2rem
+      @media (--mobile)
+        margin: 1.5rem auto 0
+        width: 100%
+
+      &.right
+        text-align: right
+        padding-bottom: 1.5rem
+
+        @media (--mobile)
+          text-align: center
+
+      & button
+        @media (--mobile)
+          margin: auto
 
 .section
   position: relative
@@ -81,7 +93,7 @@ footer
 .section-content
   margin: 0 auto
   max-width: 1000px
-  padding: 60px 5%
+  padding: 2.5% 5%
 
   &.jumbotron
     padding-top: 70px
@@ -111,27 +123,32 @@ footer
 
 .card-title,
 .question-title
-  font-size: 22px
   margin-bottom: -12px
   margin-top: 15px
 
 .question-title
   display: inline
 
-span#question
+span.question
   background-color: var(--spark-yellow)
   width: 30px
   height: 30px
   border-radius: 30px
   display: inline-block
-  margin-right: 20px
-  margin-left: -50px
+  position: absolute
+  left: -50px
 
-span#question i
-  padding-left: 10px
-  padding-top: 7px
+  @media (--illustration)
+    display: block
+    position: relative
+    left: auto
+    margin: 1rem 0 0.8rem
 
-#question-par
+  & i
+    padding-left: 10px
+    padding-top: 7px
+
+.question-par
   margin-top: 5px
 
 .banner
@@ -175,7 +192,8 @@ button
     text-align: center
     text-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px
     transition: all 250ms ease-out-back
-    width: 300px
+    max-width: 300px
+    width: 100%
 
     & i
       margin-right: 0.5rem
@@ -271,31 +289,21 @@ a.nostyle
   background-color: #fbb911
   background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 0H0v36h36V0zM15.126 2H2v13.126c.367.094.714.24 1.032.428L15.554 3.032c-.188-.318-.334-.665-.428-1.032zM18 4.874V18H4.874c-.094-.367-.24-.714-.428-1.032L16.968 4.446c.318.188.665.334 1.032.428zM22.874 2h11.712L20 16.586V4.874c1.406-.362 2.512-1.468 2.874-2.874zm10.252 18H20v13.126c.367.094.714.24 1.032.428l12.522-12.522c-.188-.318-.334-.665-.428-1.032zM36 22.874V36H22.874c-.094-.367-.24-.714-.428-1.032l12.522-12.522c.318.188.665.334 1.032.428zm0-7.748V3.414L21.414 18h11.712c.362-1.406 1.468-2.512 2.874-2.874zm-18 18V21.414L3.414 36h11.712c.362-1.406 1.468-2.512 2.874-2.874zM4.874 20h11.712L2 34.586V22.874c1.406-.362 2.512-1.468 2.874-2.874z' fill='%23bb890b' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E")
 
-.card
-  background-color: white
-  margin-bottom: 20px
-  height: 250px
-  border-radius: 5px
-  border: 2px solid lightgrey
-  cursor: pointer
-
-  &:hover
-    border: 2px solid #febb12
-
-    & .fa
-      color: #febb12
-
 /* Flex Grid */
 
 .row
   @apply --one-col
 
-  padding: 25px 0
+  padding: 2.5% 0
+  position: relative
+
+  &.bottom
+    padding: 25px 5%
 
   & > p
     font-range: 320px 350px
     font-size: responsive 1rem 1.2rem
-    line-height: 2rem
+    line-height: 1.6
 
 .grid-row
   display: flex
@@ -308,10 +316,6 @@ a.nostyle
     padding: calc(var(--font-size) / 2) 0
     width: 49%
 
-    &.last-item-odd
-      padding: calc(var(--font-size) / 2) 0
-      width: 49%
-
     @media (--mobile)
       width: 100%
 
@@ -321,10 +325,22 @@ a.nostyle
     @media (--mobile)
       width: 100%
 
-  & .main-row-item i
-    color: var(--spark-yellow)
-    margin-bottom: 0.5rem
-    margin-left: -2px
+  & .main-row-item
+    max-width: 400px
+    margin: 0 auto
+
+.card
+  background-color: white
+  margin-bottom: 20px
+  border-radius: 5px
+  border: 2px solid lightgrey
+  cursor: pointer
+
+  &:hover
+    border: 2px solid #febb12
+
+    & .fa
+      color: #febb12
 
 html#form
   margin: 0

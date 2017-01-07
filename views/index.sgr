@@ -37,18 +37,18 @@ extends(src='layout.sgr')
                       h3(class='card-title') {{ item.title }}
                         p {{ item.description }}
       div(class='section' id='section-3')
-        div(class='section-content')
+        div(class='section-content faq')
           div(class='row')
             h2 Frequently Asked Questions
           each(loop='item, index in data.questions')
             div(class='row')
-                span(id='question')
+                span(class='question')
                   i(class='fa fa-question' aria-hidden="true")
                 h3(class='question-title') {{ item.question }}
-                  p(id='question-par') {{{ item.answer }}}
+                  p(class='question-par') {{{ item.answer }}}
       div(class='section' id='section-4')
         div(class='section-content')
-          div(class='row')
+          div(class='row bottom')
             div(class='callout bottom') We want you here!
             a(href="/form" target="_blank")
               button(class='fancy-button apply')
