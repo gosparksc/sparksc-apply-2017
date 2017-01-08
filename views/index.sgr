@@ -9,7 +9,7 @@ extends(src='layout.sgr')
     main(role='main')
       div(class='section section-content with-banner' id='section-1')
         div(class='banner')
-          div(class='callout') Joining Spark SC is your opportunity to get involved with the planning and execution of some of the largest events and initiatives on the USC campus.
+          div(class='callout') Joining Spark SC is your opportunity to work on some of the most impactful student-run events and initiatives at USC.
           a(href="/form" target="_blank")
             button(class='fancy-button apply')
               i(class="fa fa-paper-plane" aria-hidden="true")
