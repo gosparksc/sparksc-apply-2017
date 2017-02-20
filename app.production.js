@@ -9,6 +9,7 @@ const locals = {}
 module.exports = {
   // disable source maps
   devtool: false,
+  vendor: 'assets/vendor/**',
   // webpack optimization and minfication plugins
   plugins: [
     new UglifyJsPlugin(),

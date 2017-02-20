@@ -4,21 +4,30 @@ html(id='{{ pageId }}')
     block(name='meta')
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible' content='IE=edge, chrome=1')
-      meta(name='description' content='Innovators and entrepreneurs at the University of Southern California.')
-      meta(name='author' content='nahrwl')
-      meta(name="viewport" content="width=device-width, initial-scale=1")
+      meta(name='description' content='Learn more about applying to Spark SC, an organization of innovators and entrepreneurs at the University of Southern California.')
       link(href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet")
-      link(href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet")
       link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
 
     block(name='meta-viewport')
       meta(name="viewport" content="width=device-width, initial-scale=1")
 
+    block(name='opengraph')
+      meta(property="og:title" content="Apply to Spark SC")
+      meta(property="og:image" content="http://sparksc.org/apply/img/opengraph.png")
+      meta(property="og:url" content="http://sparksc.org/apply")
+      meta(property="og:image:type" content="image/png")
+      meta(property="og:image:width" content="1200")
+      meta(property="og:image:height" content="630")
+      meta(property="og:description" content="We’re interested in driven student leaders who want to make a difference. If you’re inspired to do great things, think differently, and make change at USC and beyond, join us at Spark SC.")
+      meta(property="og:type" content="website")
+
     block(name='title')
-      title Spark SC &middot; Student Innovation at USC
+      title Apply to Spark SC
 
     block(name='stylesheets')
       link(rel='stylesheet' href='css/index.css')
+
+    script(src='vendor/analytics.js')
 
   body(role='document')
 

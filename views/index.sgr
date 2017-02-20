@@ -10,13 +10,14 @@ extends(src='layout.sgr')
       div(class='section section-content with-banner' id='section-1')
         div(class='banner')
           div(class='callout') Joining Spark SC is your opportunity to work on some of the most impactful student-run events and initiatives at USC.
-          a(href="/form" target="_blank")
+          a(href="form" target="_blank")
             button(class='fancy-button apply')
               i(class="fa fa-paper-plane" aria-hidden="true")
               | Apply
         div(class='row')
           h2 What We're Looking For
-          p(class='info') We're looking for optimistic and committed student leaders to join our family and help us do great things. We all come from a variety of backgrounds, and we find our common ground in our excitement for Spark SC’s mission and in our shared values.
+          p We’re interested in driven student leaders who want to make a difference. If you’re inspired to do great things, think differently, and make change at USC and beyond, then you’ll fit right in.
+          p Listed below are three organizational values that we believe in:
         div(class='grid-row thirds')
           each(loop='item in data.values')
             div(class='main-row-item')
@@ -27,11 +28,17 @@ extends(src='layout.sgr')
         div(class='section-content')
           div(class='row')
             h2 What We Do
-            p What will you do in Spark SC? Each project we work on has its own <strong>committee,</strong> which is a dedicated team of Spark SC members. Most members participate in multiple committees. Here are some of the committees you could work on:
+            p What will you work on in Spark SC? We work in <strong>committees</strong> to launch and run initiatives that impact the USC community and beyond. Most members participate in multiple committees. Here are some of the committees you could work on:
           div(class='grid-row halves')
             each(loop='item, index in data.committees')
                 div(class='card {{ (data.committees.length % 2 != 0) && (index == data.committees.length - 1) ? "last-item-odd" : "" }}')
-                  a(class='nostyle' href='{{ item.url }}')
+                  if(condition='item.url != ""')
+                    a(class='nostyle' target='_blank' href='{{ item.url }}')
+                      div(class='card-content')
+                        i(class='{{ item.icon }}' aria-hidden="true")
+                        h3(class='card-title') {{ item.title }}
+                          p {{ item.description }}
+                  else
                     div(class='card-content')
                       i(class='{{ item.icon }}' aria-hidden="true")
                       h3(class='card-title') {{ item.title }}
@@ -42,7 +49,7 @@ extends(src='layout.sgr')
             h2 Frequently Asked Questions
           each(loop='item, index in data.questions')
             div(class='row')
-                span(class='question')
+                div(class='question')
                   i(class='fa fa-question' aria-hidden="true")
                 h3(class='question-title') {{ item.question }}
                   p(class='question-par') {{{ item.answer }}}
@@ -50,7 +57,7 @@ extends(src='layout.sgr')
         div(class='section-content')
           div(class='row bottom')
             div(class='callout bottom') We want you here!
-            a(href="/form" target="_blank")
+            a(href="form" target="_blank")
               button(class='fancy-button apply')
                 i(class="fa fa-paper-plane" aria-hidden="true")
                 | Apply

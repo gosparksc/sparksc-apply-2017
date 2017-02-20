@@ -15,6 +15,7 @@ module.exports = {
     css: '*(**/)*.sss'
   },
   ignore: ['**/layout.sgr', '**/_*', '**/.*', '_cache/**', 'readme.md'],
+  vendor: 'assets/vendor/**',
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
