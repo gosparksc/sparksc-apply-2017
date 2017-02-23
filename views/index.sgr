@@ -10,10 +10,11 @@ extends(src='layout.sgr')
       div(class='section section-content with-banner' id='section-1')
         div(class='banner')
           div(class='callout') Joining Spark SC is your opportunity to work on some of the most impactful student-run events and initiatives at USC.
-          a(href="form" target="_blank")
-            button(class='fancy-button apply')
+          a
+            button(class='fancy-button apply disabled' disabled)
               i(class="fa fa-paper-plane" aria-hidden="true")
-              | Apply
+              | Applications Closed
+          p(class='note') Applications open again in the fall.
         div(class='row')
           h2 What We're Looking For
           p We’re interested in driven student leaders who want to make a difference. If you’re inspired to do great things, think differently, and make change at USC and beyond, then you’ll fit right in.
@@ -57,10 +58,11 @@ extends(src='layout.sgr')
         div(class='section-content')
           div(class='row bottom')
             div(class='callout bottom') We want you here!
-            a(href="form" target="_blank")
-              button(class='fancy-button apply')
-                i(class="fa fa-paper-plane" aria-hidden="true")
-                | Apply
+            // a
+            //   button(class='fancy-button apply disabled' disabled)
+            //     i(class="fa fa-paper-plane" aria-hidden="true")
+            //     | Applications Closed
+            p(class='note') Applications open again in the fall.
       div(class='section collage' id='section-5')
         img(src='img/apply/collage.jpg')
     footer

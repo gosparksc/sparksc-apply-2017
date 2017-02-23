@@ -169,6 +169,10 @@ footer
   padding: 3.5% 5% 35px
   top: -var(--banner-overlap)
 
+p.note
+  margin-top: 1rem
+  text-align: center
+
 .callout
   font-family: var(--merriweather)
   font-range: var(--mobile-bp) calc(var(--mobile-bp) + 200px)
@@ -219,6 +223,14 @@ button
     &.return
       background-color: var(--spark-black-well)
 
+    &.disabled
+      cursor: not-allowed
+
+      &:hover
+        box-shadow: none
+        transform: none
+
+
 /* Values */
 
 .center
@@ -263,7 +275,6 @@ span#green
   margin-top: -3px
   font-weight: 700
   letter-spacing: 1.5px
-
 
 h3.center
   font-size: 20px
