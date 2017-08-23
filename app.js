@@ -19,7 +19,7 @@ module.exports = {
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
-      locals: Object.assign({ pageId: pageId(ctx) }, locals)
+      locals: Object.assign({ pageId: pageId(ctx), applications_open: 'yes' }, locals),
     })
   },
   postcss: (ctx) => {
