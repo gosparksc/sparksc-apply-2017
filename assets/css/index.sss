@@ -185,6 +185,25 @@ p.note
   &.bottom
     text-align: center
 
+.well
+  align-items: stretch
+  background-color: var(--spark-grey-well)
+  color: var(--spark-grey)
+  display: flex
+  margin: 3rem 0 0 0
+  padding: 3rem 0 3rem 0
+
+
+  & .child
+    flex: 1
+
+    &.left
+      padding: 0 0.5rem 0 2rem
+
+    &.right
+      padding: 0 1rem 0 0.5rem
+
+
 /* Button */
 
 button
@@ -222,6 +241,11 @@ button
 
     &.return
       background-color: var(--spark-black-well)
+
+    &.facebook
+      background-color: rgba(59, 89, 152, 1)
+      color: white
+      margin: 0 auto
 
     &.disabled
       cursor: not-allowed

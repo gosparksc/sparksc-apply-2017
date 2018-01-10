@@ -15,6 +15,14 @@ extends(src='layout.sgr')
               button(class='fancy-button apply')
                 i(class="fa fa-paper-plane" aria-hidden="true")
                 | Apply
+            div(class="well")
+              div(class="child left")
+                h3 For more information, please RSVP on Facebook.
+              div(class="child right")
+                a(href="https://www.facebook.com/events/1999694853628399" target="_blank")
+                  button(class='fancy-button facebook')
+                    i(class="fa fa-facebook-official" aria-hidden="true")
+                    | RSVP on Facebook
           else
             a
               button(class='fancy-button apply disabled' disabled)

@@ -11,6 +11,7 @@
     "babel-preset-latest": "^6.16.0",
     "hard-source-webpack-plugin": "0.2.2",
     "image-webpack-loader": "^3.0.0",
+    "package.json": "^2.0.1",
     "postcss-easy-import": "^1.0.1",
     "reshape-standard": "^0.4.2",
     "spike-css-standards": "^0.1.3",
@@ -56,9 +57,15 @@
       "declaration-block-semicolon-space-before": null,
       "declaration-block-trailing-semicolon": null,
       "max-empty-lines": 2,
-      "property-no-unknown": [ true, {
-        "ignoreProperties": ["font-range", "font-path"]
-        }]
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "font-range",
+            "font-path"
+          ]
+        }
+      ]
     },
     "ignoreFiles": [
       "node_modules",
