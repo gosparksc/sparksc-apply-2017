@@ -5,11 +5,11 @@ extends(src='layout.sgr')
         object(type='image/svg+xml' data='img/apply/logo.svg')
           h1 Spark SC
         h2 Application Information
-        h3 Fall 2017
+        h3 {{ data.semester }}
     main(role='main')
       div(class='section section-content with-banner' id='section-1')
         div(class='banner')
-          div(class='callout') Joining Spark SC is your opportunity to work on some of the most impactful student-run events and initiatives at USC.
+          div(class='callout') Joining Spark SC is your opportunity to work on some of the most impactful entrepreneurial events and initiatives at USC.
           if(condition="applications_open === 'yes'")
             a(href="form" target="_blank")
               button(class='fancy-button apply')
@@ -23,7 +23,7 @@ extends(src='layout.sgr')
             p(class='note') Applications open again in the fall.
         div(class='row')
           h2 What We're Looking For
-          p We’re interested in ambitious and driven students who want to work on projects that impact campus and the surrounding LA community. If you’re inspired to do great things, think differently, and make change at USC and beyond, then you’ll fit right in.
+          p We’re interested in ambitious and driven students who want to work on entrepreneurial projects that impact campus and the surrounding LA community. If you’re inspired to do great things, think differently, and make change at USC and beyond, then you’ll fit right in.
           p Listed below are three organizational values that we believe in:
         div(class='grid-row thirds')
           each(loop='item in data.values')
