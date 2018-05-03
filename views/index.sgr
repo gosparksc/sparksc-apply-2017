@@ -15,20 +15,21 @@ extends(src='layout.sgr')
               button(class='fancy-button apply')
                 i(class="fa fa-paper-plane" aria-hidden="true")
                 | Apply
-            div(class="well")
-              div(class="child left")
-                h3 For more information, please RSVP on Facebook.
-              div(class="child right")
-                a(href="https://www.facebook.com/events/1999694853628399" target="_blank")
-                  button(class='fancy-button facebook')
-                    i(class="fa fa-facebook-official" aria-hidden="true")
-                    | RSVP on Facebook
           else
             a
               button(class='fancy-button apply disabled' disabled)
                 i(class="fa sfa-paper-plane" aria-hidden="true")
                 | Applications Closed
             p(class='note') Applications open again in the fall.
+        div(class='row')
+          div(class="well")
+            div(class="child left")
+              h3 For more information, please RSVP on Facebook.
+            div(class="child right")
+              a(href="https://www.facebook.com/events/1999694853628399" target="_blank")
+                button(class='fancy-button facebook')
+                  i(class="fa fa-facebook-official" aria-hidden="true")
+                  | RSVP on Facebook
         div(class='row')
           h2 What We're Looking For
           p We’re interested in ambitious and driven students who want to work on entrepreneurial projects that impact campus and the surrounding LA community. If you’re inspired to do great things, think differently, and make change at USC and beyond, then you’ll fit right in.
