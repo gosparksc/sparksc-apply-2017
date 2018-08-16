@@ -20,7 +20,7 @@
     "webpack": "^1.13.3"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^0.25.0",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.5.4",
     "snazzy": "^5.0.0",

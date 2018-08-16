@@ -76,12 +76,6 @@
       "icon": "fa fa-binoculars"
     },
     {
-      "title": "Arts, Grooves & Foods",
-      "description": "AGF is an art fair that exists at the confluence of art, food, fashion, entertainment and entrepreneurship. Build relationships with exhibitors, speakers, and community members, plan logistics, and work on marketing for this one-of-a-kind event.",
-      "url": "",
-      "icon": "fa fa-paint-brush"
-    },
-    {
       "title": "Communication",
       "description": "Spark SC hosts events that bring hundreds of students together and promote a culture of entrepreneurship at USC. Help us share the excitement at our events through photo, video, writing, and other media. Create marketing campaigns and promotions so that the whole campus can see what we’re up to and get involved.",
       "url": "",
@@ -103,7 +97,7 @@
   "questions": [
     {
       "question": "What is the application process?",
-      "answer": "The application is three rounds: <ol><li><a href='form'>The written application</a>, due <span class='underline'>January 19, 2018, at 11:59 PM.</span></li><li>An individual interview.</li><li>A team-based group interview.</li></ol><p>Applicants will be notified of their application status after every round. Shortly after the group interview, we will welcome our new members!</p>"
+      "answer": "The application is three rounds: <ol><li><a href='form'>The written application</a>, due <span class='underline'>August 31st, 2018, at 11:59 PM.</span></li><li>An individual interview.</li><li>A team-based group interview.</li></ol><p>Applicants will be notified of their application status after every round. Shortly after the group interview, we will welcome our new members!</p>"
     },
     {
       "question": "How long is the application process?",
