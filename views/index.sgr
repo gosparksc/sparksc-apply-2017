@@ -11,7 +11,7 @@ extends(src='layout.sgr')
         div(class='banner')
           div(class='callout') Joining Spark SC is your opportunity to work on some of the most impactful entrepreneurial events and initiatives at USC.
           if(condition="applications_open === 'yes'")
-            a(href="form" target="_blank")
+            a(href="https://sparksc.typeform.com/to/fvfFTG" target="_blank")
               button(class='fancy-button apply')
                 i(class="fa fa-paper-plane" aria-hidden="true")
                 | Apply
@@ -20,16 +20,15 @@ extends(src='layout.sgr')
               button(class='fancy-button apply disabled' disabled)
                 i(class="fa sfa-paper-plane" aria-hidden="true")
                 | Applications Not Open
-            p(class='note') Applications open on Monday, August 20th 2018. Come back then!
         div(class='row')
           div(class="well")
             div(class="child left")
               h3 For more information, please like us on Facebook.
             div(class="child right")
-              a(href="https://www.facebook.com/gosparksc/" target="_blank")
+              a(href="https://www.facebook.com/events/535008246991650/" target="_blank")
                 button(class='fancy-button facebook')
                   i(class="fa fa-facebook-official" aria-hidden="true")
-                  | Spark SC Facebook
+                  | Recruitment Event
         div(class='row')
           h2 What We're Looking For
           p We’re interested in ambitious and driven students who want to work on entrepreneurial projects that impact campus and the surrounding LA community. If you’re inspired to do great things, think differently, and make change at USC and beyond, then you’ll fit right in.
@@ -74,12 +73,10 @@ extends(src='layout.sgr')
           div(class='row bottom')
             div(class='callout bottom') We want you here!
             if(condition="applications_open === 'yes'")
-              a(href="form" target="_blank")
+              a(href="https://sparksc.typeform.com/to/fvfFTG" target="_blank")
                 button(class='fancy-button apply')
                   i(class="fa fa-paper-plane" aria-hidden="true")
                   | Apply
-            else
-              p(class='note') Applications open on Monday, August 20th 2018. Please come back then to apply. See you soon!
       div(class='section collage' id='section-5')
         img(src='img/apply/collage.jpg')
     footer
